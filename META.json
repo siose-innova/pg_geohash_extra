@@ -1,0 +1,41 @@
+{
+   "name": "pg_geohash_extra",
+   "abstract": "Additional functions for working with geohashes in PostGIS.",
+   "description": "Additional functions for working with geohashes in PostGIS.",
+   "version": "0.0.1",
+   "maintainer": [
+      "Benito M. Zaragozí <benizar@gmail.com>"
+   ],
+   "license": "GPL3",
+   "provides": {
+      "pg_geohash_extra": {
+         "abstract": "Additional functions for working with geohashes in PostGIS.",
+         "file": "pg_geohash_extra.sql",
+         "docfile": "doc/pg_geohash_extra.md",
+         "version": "0.0.1"
+      }
+   },
+   "resources": {
+      "homepage": "http://www.siose-innova.es/",
+      "bugtracker": {
+         "web": "https://github.com/siose-innova/pg_geohash_extra/issues"
+      },
+      "repository": {
+        "url":  "git://github.com/siose-innova/pg_geohash_extra.git",
+        "web":  "https://github.com/siose-innova/pg_geohash_extra",
+        "type": "git"
+      }
+   },
+   "generated_by": "Benito M. Zaragozí",
+   "meta-spec": {
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
+   },
+   "tags": [
+      "geohash",
+      "geospatial",
+      "grid",
+      "statistics",
+      "geojson"
+   ]
+}

@@ -1,0 +1,6 @@
+# geohash_extra
+comment = 'additional geohash functions'
+default_version = '0.0.1'
+relocatable = true
+module_pathname = '$libdir/pg_geohash_extra'
+requires = 'postgis'

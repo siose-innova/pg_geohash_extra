@@ -1,0 +1,43 @@
+results/
+*.so
+tmp/
+*.o
+regression.diffs
+regression.out
+/sql/range_partitioning--*
+!/sql/range_partitioning--*--*.sql
+*~
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Uncomment when code becomes splited
+#*--*.sql
+
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.swp
+temp
+results
