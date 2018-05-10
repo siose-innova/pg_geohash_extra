@@ -27,8 +27,13 @@ ogr2ogr -f "PostgreSQL" "PG:dbname=db schemas=public user=postgres password=post
 
 CREATE TABLE gh AS
 WITH src AS(
-	SELECT st_geohashfromgeom(geom, 4) AS geohash 
-	FROM roi
+	SELECT st_geohashfromgeom(geom, 2) AS geohash FROM roi
+	UNION
+	SELECT st_geohashfromgeom(geom, 3) AS geohash FROM roi
+	UNION
+	SELECT st_geohashfromgeom(geom, 4) AS geohash FROM roi
+	UNION
+	SELECT st_geohashfromgeom(geom, 5) AS geohash FROM roi
 )
 SELECT (geohash).id, (geohash).precision, (geohash).geom FROM src;
 
