@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: siose-innova/pg_geohash_extra
+    image: pg_geohash_extra
     container_name: geohash-test
     ports:
       - "5433:5432" # redirect to 5433 in case you already have postgres installed
