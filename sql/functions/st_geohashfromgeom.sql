@@ -25,7 +25,7 @@ WITH roi AS(
 	SELECT DISTINCT ST_geohash(st_centroid(geom),$2) AS geohash, ST_geomfromgeohash(ST_geohash(st_centroid(geom)),$2) AS geom
 	FROM intersecting_grid
 )
-SELECT (geohash,$2,geom)::geohash FROM filtered_grid;
+SELECT (geohash,$2,st_setsrid(geom,4326))::geohash FROM filtered_grid;
 
 $$ LANGUAGE SQL IMMUTABLE STRICT;
 
